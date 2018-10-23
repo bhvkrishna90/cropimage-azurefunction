@@ -11,12 +11,12 @@
         "subscriptionKey": {
             "type": "string",
             "metadata": {
-                "description": "Your Subscription Key for Microsoft Cognitive Services, Smart Thumbnails. Opt from https://azure.microsoft.com/en-us/try/cognitive-services/my-apis"
+                "description": "Your Subscription Key for Microsoft Cognitive Services, Smart Thumbnails. Opt one from https://azure.microsoft.com/en-us/try/cognitive-services/my-apis"
             }
         },
         "endpoint": {
             "type": "string",
-            "defaultValue": "https://westus.api.cognitive.microsoft.com/vision/v1.0/generateThumbnail",
+            "defaultValue": "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/generateThumbnail",
             "metadata": {
                 "description": "Endpoint for Smart Thumbnail Microsoft Cognitive Services."
             }
@@ -25,7 +25,7 @@
     "variables": {
         "storageName": "[concat('function', uniqueString(parameters('siteName')))]",
         "contentShareName": "[toLower(parameters('siteName'))]",
-        "repoUrl": "https://github.com/jefking/fn-smart-thumbnail",
+        "repoUrl": "https://github.com/bhvkrishna90/cropimage-azurefunction",
         "branch": "master"
     },
     "resources": [

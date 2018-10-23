@@ -1,0 +1,12 @@
+{
+    "bindings": [
+        {
+            "name": "input",
+            "type": "blobTrigger",
+            "path": "source/{name}",
+            "direction": "in",
+            "connection": "Storage"
+        }
+    ],
+    "disabled": false
+}
